@@ -1,0 +1,131 @@
+body {
+  font-family: sans-serif;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 1024px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+header .container {
+  background-color: #0067da;
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header {
+  background-color: #0067da;
+  color: #fff;
+  padding: 10px;
+  font-weight: bold;
+}
+
+header h1 {
+  font-size: 2em;
+}
+
+nav {
+  color: #fff;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  padding: 8px;
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  padding: 20px;
+}
+
+h2 {
+  color: #0067da;
+  border-bottom: 2px solid #0067da;
+}
+
+#sobre-a-loja .container {
+  display: flex;
+}
+
+#sobre-a-loja img {
+  width: 100%; /* Ajuste a largura da imagem conforme desejar */
+  margin-right: 20px; /* Adicione um espaçamento entre a imagem e o texto */
+}
+
+.linha-de-produtos {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+
+.linha-de-produtos img {
+  max-width: 100%;
+  width: 320px;
+  height: 230px;
+}
+
+.produto button {
+  background-color: #0067da;
+  color: #fff;
+  font-size: 1.2em;
+  width: 100%;
+  border-radius: 2px;
+  border: NONE;
+}
+
+@media screen and (max-width: 640px) {
+  .container {
+    max-width: 90%;
+    padding-bottom: 3em;
+  }
+
+  header h1 {
+    font-size: 3em;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  #sobre-a-loja .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container .linha-de-produtos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .container .linha-de-produtos img {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 641px) and (max-width: 1023px) {
+  .container {
+    max-width: 90%;
+    padding-bottom: 3em;
+  }
+  #sobre-a-loja .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .linha-de-produtos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+}
